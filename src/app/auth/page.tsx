@@ -21,7 +21,7 @@ export default function Home() {
 
         <button className={styles.form_submit} type="submit">Log In!</button>
 
-        <p>Don't have an account? <Link className={styles.cta_button} href="/auth/register">Register Here!</Link></p>
+        <p>Don&apos;t have an account? <Link className={styles.cta_button} href="/auth/register">Register Here!</Link></p>
       </form>
     )
   }

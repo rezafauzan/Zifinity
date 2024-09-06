@@ -86,7 +86,7 @@ const ContactSection: React.FC = () => {
                         <a href="https://youtube.com/@rezafauzanadhima" className={styles.contact_link}>Reza
                             Fauzan
                             Adhima</a>
-                        <p>Let's have some fun</p>
+                        <p>Let&apos;s have some fun</p>
                         <a href="https://youtube.com/@rezafauzanadhima" className={styles.contact_link}>Reza
                             Fauzan
                             Adhima</a>

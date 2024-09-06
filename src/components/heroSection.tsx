@@ -17,7 +17,7 @@ const HeroSection: React.FC<HeroSectionProps> = ( {data} ) => {
         return (
             <div className={styles.copytext}>
                 <div className={styles.copytext_headline}>
-                    <h1 className={styles.h1}>Zigzag's Infinity Team</h1>
+                    <h1 className={styles.h1}>Zigzag&apos;s Infinity Team</h1>
                     <h2 className={styles.h2}>{hero_headline}</h2>
                 </div>
                 <div className={styles.copytext_body}>
