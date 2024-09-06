@@ -6,7 +6,6 @@ import Footer from "@/components/footer"
 import HeroSection from "@/components/heroSection"
 import AboutSection from "@/components/aboutSection"
 import FeatureSection from "@/components/featureSection"
-// import ContactSection from "@/components/contactSection"
 import Loading from "@/components/loading"
 
 async function fetchData(url: string) {
@@ -44,7 +43,6 @@ export default async function Home() {
         <HeroSection data={data.heroContents} />
         <AboutSection data={data.aboutContents} />
         <FeatureSection data={data.featureContents} />
-        {/* <ContactSection /> */}
       </Main>
       <Footer />
     </PageWrapper>
