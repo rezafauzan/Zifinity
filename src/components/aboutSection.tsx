@@ -6,7 +6,7 @@ import Link from "next/link"
 
 interface Content {
     about_headline: string,
-    about_content: [],
+    about_content: string,
     about_picture: string
 }
 
