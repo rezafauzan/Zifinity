@@ -1,0 +1,64 @@
+INSERT INTO `techstack` (`id`, `techstack_name`, `techstack_type`, `techstack_icon`, `techstack_category_id`, `created_at`, `updated_at`) 
+VALUES 
+(NULL, 'Bootstrap', 'Framework', 'assets/img/vendor/bootstrap-svgrepo-com.svg', '1', current_timestamp(), current_timestamp()),
+(NULL, 'Tailwinds', 'Framework', 'assets/img/vendor/tailwindcss-white-full.svg', '1', current_timestamp(), current_timestamp()),
+(NULL, 'Laravel', 'Framework', 'assets/img/vendor/laravel-original.svg', '2', current_timestamp(), current_timestamp()),
+(NULL, 'Codeigniter', 'Framework', 'assets/img/vendor/codeigniter-svgrepo-com.svg', '2', current_timestamp(), current_timestamp()),
+(NULL, 'Springboot', 'Framework', 'assets/img/vendor/Spring_Boot.svg', '2', current_timestamp(), current_timestamp()),
+(NULL, 'Quarkus', 'Framework', 'assets/img/vendor/quarkus-icon-svgrepo-com.svg', '2', current_timestamp(), current_timestamp()),
+(NULL, 'ExpressJS', 'Framework', 'assets/img/vendor/', '2', current_timestamp(), current_timestamp()),
+(NULL, 'NextJS', 'Framework', 'assets/img/vendor/', '2', current_timestamp(), current_timestamp())
+;
+
+INSERT INTO `techstack` (`id`, `techstack_name`, `techstack_type`, `techstack_icon`, `techstack_category_id`, `created_at`, `updated_at`) 
+VALUES 
+(NULL, 'React', 'Library', 'assets/img/vendor/React-icon.svg', '1', current_timestamp(), current_timestamp()),
+(NULL, 'NodeKS', 'Runtime', 'assets/img/vendor/Node.js_logo.svg', '2', current_timestamp(), current_timestamp())
+;
+
+INSERT INTO `techstack` (`id`, `techstack_name`, `techstack_type`, `techstack_icon`, `techstack_category_id`, `created_at`, `updated_at`) 
+VALUES 
+(NULL, 'SASS', 'Preprocessor', 'assets/img/vendor/sass-full-svgrepo-com.svg', '1', current_timestamp(), current_timestamp()),
+(NULL, 'Webpack', 'Bundler', 'assets/img/vendor/', '1', current_timestamp(), current_timestamp()),
+(NULL, 'Vite', 'Bundler', 'assets/img/vendor/', '1', current_timestamp(), current_timestamp())
+;
+
+INSERT INTO `techstack` (`id`, `techstack_name`, `techstack_type`, `techstack_icon`, `techstack_category_id`, `created_at`, `updated_at`) 
+VALUES 
+(NULL, 'MySQL', 'Database Management System', 'assets/img/vendor/mysql-logo-svgrepo-com.svg', '2', current_timestamp(), current_timestamp()),
+(NULL, 'PostgreSQL', 'Database Management System', 'assets/img/vendor/postgresql.svg', '2', current_timestamp(), current_timestamp())
+;
+
+SELECT                                                 // Kolom kolom yang akan diambil
+    service.*,                                         // nama_tabel.nama_kolom
+    service_category.service_category_name             // nama_tabel.nama_kolom
+FROM                                                   // Dari tabel mana
+    service                                            // dari tabel ini 
+LEFT JOIN                                              // yang sudah digabung dengan
+    service_category                                   // tabel ini
+ON                                                     // dengan mencocokan 
+    service.service_category_id = service_category.id; // value kolom tabel service yang sama dengan value kolom yang ada di service_category
+
+php artisan make:migration create_about_table
+php artisan make:migration create_feature_table
+php artisan make:migration create_hero_table
+php artisan make:migration create_service_table
+php artisan make:migration create_service_category_table
+php artisan make:migration create_techstack_table
+php artisan make:migration create_techstack_category_table
+
+php artisan make:seeder AboutSeeder
+php artisan make:seeder FeatureSeeder
+php artisan make:seeder HeroSeeder
+php artisan make:seeder ServiceSeeder
+php artisan make:seeder ServiceCategorySeeder
+php artisan make:seeder TechstackSeeder
+php artisan make:seeder TechstackCategorySeeder
+
+php artisan make:model About
+php artisan make:model Feature
+php artisan make:model Hero
+php artisan make:model Service
+php artisan make:model ServiceCategory
+php artisan make:model Techstack
+php artisan make:model TechstackCategory

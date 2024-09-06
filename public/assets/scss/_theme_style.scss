@@ -1,0 +1,673 @@
+// body {
+//     background: var(--body-background);
+//     color: var(--text-primary-900);
+
+//     .ornament {
+
+//         .blue-circle-light {
+//             background: radial-gradient(circle, rgba(255, 255, 255, 0) 0%, rgba(100, 181, 246, 0.6) 100%);
+//         }
+
+//     }
+
+//     header {
+
+//         nav {
+//             background: var(--nav-background);
+
+//             .brand {
+
+//                 .brand-link {
+//                     color: var(--text-primary-200);
+//                 }
+
+//             }
+
+//             .nav-list {
+
+//                 .nav-list-item {
+
+//                     .nav-link {
+//                         color: var(--text-primary-450);
+//                     }
+
+//                     .nav-link.active,
+//                     .nav-link:hover {
+//                         color: var(--text-primary-200);
+//                     }
+
+//                 }
+
+//             }
+
+//             .cta {
+
+//                 .cta-button {
+//                     color: var(--cta-text-primary-100);
+//                     border: 2px solid var(--cta-background);
+//                 }
+
+//                 .cta-button:hover {
+//                     background-color: var(--cta-hover-background);
+//                 }
+
+//                 .cta-button:active {
+//                     background-color: var(--cta-active-background);
+//                 }
+
+//             }
+
+//             .navbar-toggler {
+
+//                 span {
+//                     background: var(--color-neutral-100);
+//                 }
+
+//             }
+
+//         }
+
+//         nav.scrolled {
+//             background: var(--nav-scrolled-background);
+//         }
+//     }
+
+//     main {
+//         color: var(--text-primary-900);
+
+//         section#hero {
+
+//             .copytext {
+
+//                 .cta {
+
+//                     .cta-button {
+//                         background: var(--cta-background);
+//                         color: var(--cta-text-primary-900);
+//                         border: 2px solid var(--cta-background);
+//                     }
+
+//                     .cta-button:hover {
+//                         background-color: var(--cta-hover-background);
+//                     }
+
+//                     .cta-button:active {
+//                         background-color: var(--cta-active-background);
+//                     }
+
+
+//                 }
+
+//             }
+
+//             .hero-image {
+//                 @include d-flex(flex-end, center, row)
+//             }
+
+//         }
+
+//         section#feature {
+//             .section-body {
+
+//                 .feature-list {
+
+//                     .feature-list-item {
+
+//                         .feature-details {
+//                             background: transparent;
+//                             color: var(--text-primary-900);
+
+//                             .feature-details-cta {
+//                                 color: var(--text-link-400);
+//                             }
+
+//                             .feature-details-cta:hover {
+//                                 color: var(--text-link-800);
+//                             }
+
+//                             .feature-details-cta:active {
+//                                 color: var(--text-link-200);
+//                             }
+
+//                         }
+
+//                     }
+
+//                 }
+
+//             }
+
+//         }
+
+//         section#service {
+
+//             .section-body {
+
+//                 .role {
+
+//                     .as-frontend,
+//                     .as-backend {
+
+//                         p {
+//                             color: var(--text-primary-200);
+//                         }
+
+//                     }
+//                 }
+
+//                 .service-container {
+
+//                     .service-list {
+
+//                         .service-list-item {
+
+//                             .card {
+//                                 color: var(--text-primary-900);
+//                             }
+
+//                         }
+
+//                     }
+
+//                 }
+
+//             }
+
+//         }
+
+//         section#portfolio {
+
+//             .section-body {
+
+//                 .project-category-navigation {
+
+//                     .project-nav-list {
+
+//                         .project-nav-list-item {
+
+//                             .project-nav-link {
+//                                 color: var(--text-link-200);
+//                             }
+
+//                             .project-nav-link:hover {
+//                                 color: var(--text-link-400);
+//                             }
+
+//                             .project-nav-link.active {
+//                                 color: var(--text-link-800);
+//                             }
+
+//                             .project-nav-link:active {
+//                                 color: var(--text-link-800);
+//                             }
+
+//                         }
+
+//                     }
+
+//                 }
+
+//             }
+
+//         }
+
+//         section#contact {
+
+//             .section-body {
+
+//                 .container {
+
+//                     form {
+
+//                         input,
+//                         textarea {
+//                             background: var(--background-primary-450);
+//                             color: var(--text-primary-200);
+//                         }
+
+//                         input::placeholder,
+//                         textarea::placeholder {
+//                             color: var(--text-primary-200);
+//                         }
+
+//                         input:focus-visible,
+//                         textarea:focus-visible {
+//                             outline: var(--color-neutral-100) auto 1px;
+//                         }
+
+//                         button {
+//                             color: var(--text-primary-900);
+//                             border: 2px solid var(--cta-background);
+//                         }
+
+//                         button:hover {
+//                             background-color: var(--cta-hover-background);
+//                         }
+
+//                         button:active {
+//                             background-color: var(--cta-active-background);
+//                         }
+
+//                     }
+
+//                     .contact-list {
+//                         .contact-list-item {
+//                             .contact-link {
+//                                 color: var(--text-link-400);
+//                             }
+
+//                             .contact-link:hover {
+//                                 color: var(--text-link-800);
+//                             }
+
+//                             .contact-link:active {
+//                                 color: var(--text-link-200);
+//                             }
+
+//                         }
+
+//                     }
+
+//                     .social-media-list {
+
+//                         .social-media-list-item {
+
+//                             .social-media-link {
+//                                 color: var(--text-link-400);
+//                             }
+
+//                             .social-media-link:hover {
+//                                 color: var(--text-link-800);
+//                             }
+
+//                             .social-media-link:hover {
+//                                 color: var(--text-link-200);
+//                             }
+
+//                         }
+
+//                     }
+
+//                 }
+
+//             }
+
+//         }
+
+//     }
+
+//     footer {
+//         border-top: 1px solid var(--background-primary-900);
+
+//         .footer-nav {
+//             color: var(--text-primary-900);
+
+//             .nav-list {
+
+//                 .nav-list-item {
+
+//                     .nav-link {
+//                         color: var(--text-link-400);
+//                     }
+
+//                     .nav-link:hover {
+//                         color: var(--text-link-800);
+//                     }
+
+//                     .nav-link:active {
+//                         color: var(--text-link-200);
+//                     }
+
+//                 }
+
+//             }
+
+//         }
+//     }
+
+// }
+
+body.dark-theme {
+    background: var(--body-dark-background);
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: var(--text-primary-200);
+    // backdrop-filter: blur(1.85em); // This property cause the child position fixed not work
+
+    header {
+
+        nav {
+            background: var(--nav-background);
+
+            .brand {
+
+                .brand-link {
+                    background: linear-gradient(45deg, #04f, #0F4);
+                    background-clip: text;
+                    -webkit-background-clip: text;
+                    color: transparent;
+                }
+
+            }
+
+
+            .nav-list {
+
+                .nav-list-item {
+
+                    .nav-link {
+                        color: var(--text-link-white);
+                    }
+
+                    .nav-link:hover {
+                        color: var(--text-link-200);
+                    }
+
+                    .nav-link:active {
+                        color: var(--text-link-800);
+                    }
+
+                    .nav-link.active {
+                        color: var(--text-link-800);
+                    }
+
+                }
+
+            }
+
+            .cta {
+
+                .cta-button {
+                    background: var(--cta-background);
+                    color: var(--cta-text-primary-200);
+                    padding: 0.25em 1em;
+                    border: 2px solid var(--cta-background);
+                    border-radius: 100vmax;
+                    text-align: center;
+                    text-decoration: none;
+                    display: inline-block;
+                    cursor: pointer;
+                }
+    
+                .cta-button:hover {
+                    background-color: var(--cta-hover-background);
+                    border-color: var(--cta-hover-background);
+                }
+    
+                .cta-button:active {
+                    background-color: var(--cta-active-background);
+                    border-color: var(--cta-active-background);
+                }
+    
+            }
+
+            .navbar-toggler {
+
+                span {
+                    background: var(--color-neutral-200);
+                }
+
+            }
+
+        }
+
+        nav.scrolled {
+            background: var(--nav-scrolled-background);
+        }
+    }
+
+    main {
+        color: inherit;
+
+        section#hero {
+
+            .copytext {
+
+                .cta {
+
+                    .cta-button {
+                        background: var(--cta-background);
+                        color: var(--cta-text-primary-100);
+                        border: 2px solid var(--cta-background);
+                    }
+
+                    .cta-button:hover {
+                        background-color: var(--cta-hover-background);
+                    }
+
+                    .cta-button:active {
+                        background-color: var(--cta-active-background);
+                    }
+
+
+                }
+
+            }
+
+            .hero-image {
+                @include d-flex(flex-end, center, row)
+            }
+
+        }
+
+        section#feature {
+            .section-body {
+
+                .feature-list {
+
+                    .feature-list-item {
+
+                        .feature-details {
+                            background: transparent;
+                            color: inherit;
+
+                            .feature-details-cta {
+                                color: var(--text-link-400);
+                            }
+
+                            .feature-details-cta:hover {
+                                color: var(--text-link-800);
+                            }
+
+                            .feature-details-cta:active {
+                                color: var(--text-link-200);
+                            }
+
+                        }
+
+                    }
+
+                }
+
+            }
+
+        }
+
+        section#service {
+
+            .section-body {
+
+                .role {
+
+                    .as-frontend,
+                    .as-backend {
+
+                        p {
+                            color: var(--text-primary-200);
+                        }
+
+                    }
+                }
+
+                .service-container {
+
+                    .service-list {
+
+                        .service-list-item {
+
+                            .card {
+                                color: var(--text-primary-200);
+                            }
+
+                        }
+
+                    }
+
+                }
+
+            }
+
+        }
+
+        section#portfolio {
+
+            .section-body {
+
+                .project-category-navigation {
+
+                    .project-nav-list {
+
+                        .project-nav-list-item {
+
+                            .project-nav-link {
+                                color: var(--text-link-200);
+                            }
+
+                            .project-nav-link:hover {
+                                color: var(--text-link-400);
+                            }
+
+                            .project-nav-link.active {
+                                color: var(--text-link-800);
+                            }
+
+                            .project-nav-link:active {
+                                color: var(--text-link-800);
+                            }
+
+                        }
+
+                    }
+
+                }
+
+            }
+
+        }
+
+        section#contact {
+
+            .section-body {
+
+                .container {
+
+                    form {
+
+                        input,
+                        textarea {
+                            background: var(--background-primary-450);
+                            color: var(--text-primary-200);
+                        }
+
+                        input::placeholder,
+                        textarea::placeholder {
+                            color: var(--text-primary-200);
+                        }
+
+                        input:focus-visible,
+                        textarea:focus-visible {
+                            outline: var(--color-neutral-100) auto 1px;
+                        }
+
+                        button {
+                            color: var(--cta-text-primary-100);
+                            border: 2px solid var(--cta-background);
+                        }
+
+                        button:hover {
+                            background-color: var(--cta-hover-background);
+                        }
+
+                        button:active {
+                            background-color: var(--cta-active-background);
+                        }
+
+                    }
+
+                    .contact-list {
+                        
+                        .contact-list-item {
+                            .contact-link {
+                                color: var(--text-link-400);
+                            }
+
+                            .contact-link:hover {
+                                color: var(--text-link-800);
+                            }
+
+                            .contact-link:active {
+                                color: var(--text-link-200);
+                            }
+
+                        }
+
+                    }
+
+                    .social-media-list {
+
+                        .social-media-list-item {
+
+                            .social-media-link {
+                                color: var(--text-link-400);
+                            }
+
+                            .social-media-link:hover {
+                                color: var(--text-link-800);
+                            }
+
+                            .social-media-link:hover {
+                                color: var(--text-link-200);
+                            }
+
+                        }
+
+                    }
+
+                }
+
+            }
+
+        }
+
+    }
+
+    footer {
+        border-top: 1px solid var(--background-primary-100);
+
+        .footer-nav {
+            color: inherit;
+
+            .nav-list {
+
+                .nav-list-item {
+
+                    .nav-link {
+                        color: var(--text-link-400);
+                    }
+
+                    .nav-link:hover {
+                        color: var(--text-link-800);
+                    }
+
+                    .nav-link:active {
+                        color: var(--text-link-200);
+                    }
+
+                }
+
+            }
+
+        }
+    }
+
+}

@@ -1,0 +1,21 @@
+.modal{
+    padding: 1em;
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+    @include d-flex(center, center, column);
+    gap: 1em;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 9;
+    animation: fadeout 8s ease-out forwards;
+}
+
+.modal:hover{
+    animation-play-state: paused;
+}
+
+.modal.alert{
+    background: #DD144D;
+}

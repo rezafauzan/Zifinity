@@ -1,0 +1,21 @@
+Interpolation
+adalah suatu metode pemanggilan isi variable di dalam string
+contoh dalam bahasa pemrograman php <?php $nama="Reza"; $Greeting="Halo nama saya $nama"; ?>
+
+Concatenation
+Merupakan metode penggabungan dua buah string contoh pada bahasa pemrograman php <?php $nama_depan="Reza"; $nama_belakang="Fauzan Adhima"; $nama_lengkap= $nama_depan + $nama_belakang; ?>
+
+Redirect
+Merupakan metode untuk memindahkan user dari sebuah halaman ke halaman lain
+
+Data
+Representasi fakta di dunia nyata
+
+Database
+Merupakan tempat atau wadah untuk menampung data-data
+
+Database Management System (DBMS)
+Merupakan perangkat lunak untuk mengelola database
+
+Fetch Data
+Merupakan metode untuk mengambil data

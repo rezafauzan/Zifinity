@@ -1,0 +1,130 @@
+.section{
+    min-height: 400px;
+    max-height: 800px;
+    height: 100vh;
+    /* background: url("/assets/img/drawable/fotor-ai1.jpg");
+    background-size: cover;
+    background-repeat: no-repeat; */
+
+    .container{
+        .section_body {
+            grid-template-columns: 1fr;
+            
+            .copytext {
+                width: 100%;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: flex-start;
+                gap: 2em;
+    
+                .copytext_headline {
+                    width: 100%;
+                    text-align: center;
+
+                    .h1{
+                        font-size: clamp(2em, 4vw, 4em);
+                        font-weight: 400;
+                    }
+                    .h2{
+                        font-size: clamp(1em, 4vw, 2em);
+                        font-weight: 400;
+                    }
+                }
+    
+                .copytext_body {
+                    width: 100%;
+                    font-size: clamp(0.4em, 4vw, 1em);
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: center;
+                    gap: 2em;
+                    text-align: center;
+                }
+    
+                .cta {
+                    width: 100%;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    gap: 2em;
+
+                    .cta_link {
+                        color: var(--text-link-400);
+                        text-decoration: none;
+                    }
+    
+                    .cta_link:hover {
+                        color: var(--text-link-200);
+                        text-shadow: 4px 4px 16px var(--text-link-200);
+                    }
+    
+                    .cta_link:active {
+                        color: var(--text-link-800);
+                        text-shadow: 4px 4px 16px var(--text-link-800);
+                    }
+    
+                    .cta_button {
+                        width: 100%;
+                        max-width: 200px;
+                        padding: 1em;
+                        border-radius: 100vmax;
+                        font-size: clamp(6px, 1rem, 32px);
+                        display: block;
+                        white-space: normal;
+                        text-decoration: none;
+                        text-align: center;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.section::after{
+    background: #FFF;
+    filter: blur(40px);
+    width: 160px;
+    height: 160px;
+    border-radius: 100vmax;
+    position: relative;
+    top: 50%;
+    left: 50%;
+}
+
+/* Extra extra small device*/
+@media only screen and (max-width: 480px) {}
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {}
+
+/* Medium devices (landscape tablets, 768px and down) */
+@media only screen and (max-width: 768px) {}
+
+/* Extra large devices (large laptops and desktops, 1200px and down) */
+@media only screen and (max-width: 1200px) {}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {}
+
+/* Browser prefer dark color scheme */
+@media(prefers-color-scheme: dark) {}
+
+/* Browser prefer light color scheme */
+@media(prefers-color-scheme: light) {
+    .section{
+        .container{
+            background: none;
+        }
+    }
+}

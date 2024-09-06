@@ -1,0 +1,31 @@
+.resume_details_list{
+    list-style: none;
+    display: grid;
+    grid-template-areas: 
+    "name"
+    "education_history"
+    "skills"
+    "techstacks"
+    "project_history"
+    "contact"
+    ;
+    justify-content: center;
+    align-items: center;
+    gap: 2em;
+    
+    .resume_details_list_item{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 2em;
+    }
+
+    .resume_details_list_item.techstacks{
+        .techstacks_list{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+    }
+}

@@ -1,0 +1,55 @@
+-- Table Scheme --
+-- TABLE hero --
+-id ( AI, INT )
+-hero_headline ( VARCHAR 255 )
+-hero_description ( VARCHAR 255 )
+-created_at ( timestamp DATETIME )
+-updated_at ( timestamp DATETIME)
+
+-- TABLE about --
+-id ( AI, INT )
+-about_headline ( VARCHAR 255 )
+-about_content ( VARCHAR 255 )
+-about_picture ( VARCHAR 255 )
+-created_at ( timestamp DATETIME )
+-updated_at ( timestamp DATETIME )
+
+-- TABLE feature --
+-id ( AI, INT )
+-feature_headline ( VARCHAR 255 )
+-feature_description ( VARCHAR 255 )
+-feature_icon ( VARCHAR 255 )
+-created_at ( timestamp DATETIME )
+-updated_at ( timestamp DATETIME )
+
+-- TABLE service --
+-id ( AI, INT )
+-service_title ( VARCHAR 255 )
+-service_description ( VARCHAR 255 )
+-service_category ( VARCHAR 255 )
+-service_image ( VARCHAR 255 )
+-created_at ( timestamp DATETIME )
+-updated_at ( timestamp DATETIME )
+
+-- TABLE techstack --
+-id ( AI, INT )
+-techstack_name ( VARCHAR 255 )
+-techstack_type ( VARCHAR 255 )
+-techstack_category ( VARCHAR 255 )
+-techstack_icon ( VARCHAR 255 )
+-created_at ( timestamp DATETIME )
+-updated_at ( timestamp DATETIME )
+
+-- TABLE service_category --
+-id ( AI, INT )
+-service_category_name ( VARCHAR 255 )
+-service_category_description ( VARCHAR 255 )
+-created_at ( timestamp DATETIME )
+-updated_at ( timestamp DATETIME )
+
+-- TABLE techstack_category --
+-id ( AI, INT )
+-techstack_category_name ( VARCHAR 255 )
+-techstack_category_description ( VARCHAR 255 )
+-created_at ( timestamp DATETIME )
+-updated_at ( timestamp DATETIME )

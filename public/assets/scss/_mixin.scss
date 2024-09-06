@@ -1,0 +1,18 @@
+@mixin d-flex($justify: flex-start, $align: flex-start, $direction: row) {
+    display: flex;
+    flex-direction: $direction;
+    justify-content: $justify;
+    align-items: $align;
+}
+
+@mixin bgimage($url) {
+    background-image: url($url);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+
+
+
+

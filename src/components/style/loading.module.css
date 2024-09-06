@@ -1,0 +1,17 @@
+@keyframes fade-in-out {
+    0% {
+        opacity: 100%;
+    }
+
+    50% {
+        opacity: 50%;
+    }
+
+    100% {
+        opacity: 0;
+    }
+}
+
+.loading {
+    animation: fade-in-out 1s infinite ease-in-out;
+}

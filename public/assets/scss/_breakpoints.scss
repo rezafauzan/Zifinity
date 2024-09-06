@@ -1,0 +1,354 @@
+/* Extra extra small device*/
+@media only screen and (max-width: 480px) {
+
+    header {
+
+        .utility {
+            height: max-content;
+            flex-direction: column-reverse;
+        }
+
+        nav {
+            height: max-content;
+            flex-direction: column;
+        }
+
+    }
+
+    main {
+
+        section {
+
+            .section-body {
+                padding: 0;
+            }
+
+        }
+
+        section#about {
+
+            .section-body {
+
+                .picture-of-me {
+
+                    img {
+                        max-width: 120px;
+                    }
+
+                }
+
+            }
+
+        }
+
+        section#feature {
+            .section-body {
+
+                .feature-list {
+
+                    .feature-list-item {
+                        min-width: unset;
+                        max-width: 16em;
+                        width: 100%;
+
+                        .card {
+                            height: unset;
+                        }
+
+                    }
+
+                }
+
+            }
+
+        }
+
+        section#service{
+
+            .section-body{
+
+                .service-container{
+
+                    .service-list#service-list{
+                        grid-template-columns: repeat(1, 1fr);
+                    }
+
+                }
+
+            }
+
+        }
+
+    }
+
+    footer {
+
+        .footer-nav {
+            flex-direction: column;
+
+            .nav-list {
+                flex-direction: column;
+            }
+
+        }
+
+    }
+
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+
+    .page-wrapper {
+        max-width: 600px;
+    }
+
+    main {
+
+        section {
+
+            .section-body {
+                padding: 1em;
+            }
+
+        }
+
+        section#hero {
+            height: 400px;
+
+            .section-body {
+
+                .herousel {
+
+                    .herousel-list{
+                        padding: 0 1em;
+                    }
+
+                    .herousel-navigation {
+                        position: relative;
+                        bottom: 4em;
+
+                        #herousel-previous-button,
+                        #herousel-next-button {
+                            position: relative;
+                        }
+
+                        #herousel-previous-button {
+                            left: 0;
+                        }
+
+                        #herousel-next-button {
+                            right: 0;
+                        }
+
+                    }
+
+                }
+
+            }
+
+        }
+
+        section#about {
+
+            .section-body {
+                grid-template-columns: 1fr;
+                gap: 2em;
+
+                .picture-of-me {
+                    justify-content: center;
+                }
+
+            }
+
+        }
+
+        section#feature {
+
+            .section-body {
+                padding: 0;
+
+                .feature-list {
+                    @include d-flex(center, center, column);
+                    gap: 2em;
+
+                    .feature-list-item {
+                        grid-template-columns: 1fr;
+                    }
+
+                }
+
+            }
+
+        }
+
+        section#service{
+
+            .section-body{
+
+                .service-container{
+
+                    .service-list{
+                        grid-template-columns: repeat(2, 1fr);
+                    }
+
+                }
+
+            }
+
+        }
+
+        section#contact {
+            padding: 0;
+
+            .section-body {
+                padding: 0;
+            }
+
+        }
+
+    }
+
+}
+
+/* Medium devices (landscape tablets, 768px and down) */
+@media only screen and (max-width: 768px) {
+    
+    main {
+        section#contact {
+            padding: 0;
+
+            .section-body {
+                padding: 0;
+
+                .contact-container{
+                    .contact-list {
+                        grid-template-columns: 1fr; 
+                    }
+                }
+
+            }
+
+        }
+    }
+
+    footer{
+        .footer-nav{
+            flex-direction: column;
+            gap: 2em;
+
+            .copyright{
+                text-align: center;
+            }
+
+        }
+    }
+
+}
+
+@media only screen and (max-width: 1200px) {
+
+    header {
+
+        nav {
+            position: relative;
+
+            .nav-list {
+                background: rgba(0, 0, 0, 0.8);
+                backdrop-filter: blur(40px);
+                height: 0px;
+                padding: 1em;
+                display: none;
+                position: absolute;
+                top: 100%;
+                left: 0;
+                right: 0;
+                bottom: 0;
+            }
+
+            .nav-list.show {
+                min-height: calc(100vh - 100px);
+                height: fit-content;
+                @include d-flex(space-around, center, column);
+                gap: 1em;
+            }
+
+            .cta {
+                display: none;
+            }
+
+            .navbar-toggler {
+                display: block;
+            }
+
+        }
+
+    }
+
+    main {
+
+        section#hero {
+            margin-top: 0px;
+        }
+
+        section#service{
+
+            .section-body{
+
+                .service-container{
+
+                    .service-list{
+                        grid-template-columns: repeat(3, 1fr);
+                    }
+
+                }
+
+            }
+
+        }
+
+    }
+
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+
+    .page-wrapper {
+        max-width: 600px;
+    }
+
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+
+    .page-wrapper {
+        max-width: 800px;
+    }
+
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+    .page-wrapper {
+        max-width: 1140px;
+    }
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+    .page-wrapper {
+        max-width: 1600px;
+    }
+
+    main{
+
+        .section-nav{
+            width: 16%;
+            right: -16%;
+        }
+
+    }
+
+}

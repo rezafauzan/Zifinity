@@ -1,0 +1,86 @@
+To Do:
+-Integrate Backend (Done)
+-Create Database (Done)
+-Create Database Scheme (Done)
+-Create Table "hero" (Done)
+-Create Table "about" (Done)
+-Create Table "feature" (Done)
+-Create Table "service" (Done)
+-Create Table "techstack" (Done)
+-Create Table "service_category" (Done)
+-Create Table "techstack_category" (Done)
+-Populate Hero Section Content from Database (Done)
+-Populate About Section Content from Database (Done)
+-Populate Feature Section Content from Database (Done)
+-Populate Service Section Content from Database (Done)
+
+09/08/2024
+-Migrate to Laravel 11 (On Process)
+-Clone assets to Laravel 11 App (Done) :
+    -Clone SCSS (Done)
+    -Clone JS (Done)
+    -Clone Landing Page (Done)
+    -Clone Images (Done)
+    -Clone jurnal, scratch, scheme, refference (Done)
+-Export Database (Done)
+-Export Data from Database (Done)
+-Convert Database tables to Laravel 11 migrations files (Done)
+-Import Data from Exported Database (Done) :
+    -Create Seeder for Table "hero" (Done)
+    -Create Seeder for Table "about" (Done)
+    -Create Seeder for Table "feature" (Done)
+    -Create Seeder for Table "service" (Done)
+    -Create Seeder for Table "techstack" (Done)
+    -Create Seeder for Table "service_category" (Done)
+    -Create Seeder for Table "techstack_category" (Done)
+-Migrate and Populate Database Tables (Done)
+-Create Laravel Model (Done) :
+    -Create Model for Table "hero" (Done)
+    -Create Model for Table "about" (Done)
+    -Create Model for Table "feature" (Done)
+    -Create Model for Table "service" (Done)
+    -Create Model for Table "techstack" (Done)
+    -Create Model for Table "service_category" (Done)
+    -Create Model for Table "techstack_category" (Done)
+-Convert Landing Page to Blade Format (Done)
+-Create Laravel Controller (Done) :
+    -Create Controller AppController (Done)
+-Create AppController Method (Done) :
+    -Create Method for fetch data from model and return landing-page view with data (Done)
+-Create Laravel Route (Done) : 
+    -Create Route to [AppController::class, 'index'] (Done)
+-Seperate Landing page into Blade Layout and Components (On Process) :
+    -Create Main Layout Component (Done)
+    -Create Header Component
+    -Create Main Component
+    -Create Footer Component
+-Create Landing Page with Blade
+-Populate landing-page (On Process) :
+    -Populate Hero Section Content from AppController Data (On Process)
+    -Populate About Section Content from AppController Data
+    -Populate Feature Section Content from AppController Data
+    -Populate Service Section Content from AppController Data
+
+18/08/2024
+-Add lazy loading to all <img>@LandingPage.blade.php (Done)
+
+19/08/2024
+-Create `Zififront` NextJS Project (Done)
+-Create Main NextJS Layout (Done)
+-Convert UI to NextJS Components (On Progress)
+
+27/08/2024
+-Pemotretan set professional latar hitam pakaian hitam kasual professional
+
+*Create Pages:
+-About
+-Resume
+-Portfolio
+-Product
+-Service
+-Contact
+-Journal
+-Blog
+-Sertification, Training, Achievment Wall
+-Term & Condition
+-Customer Service

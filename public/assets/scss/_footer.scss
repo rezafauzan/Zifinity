@@ -1,0 +1,35 @@
+footer {
+    backdrop-filter: blur(40px);
+    padding: 2em;
+    border-top: 1px solid var(--background-primary-900);
+
+    .footer-nav {
+        @include d-flex(space-between, center, row);
+        color: var(--text-primary-900);
+
+        .nav-list {
+            list-style: none;
+            @include d-flex(center, center, row);
+            gap: 2em;
+
+            .nav-list-item {
+
+                .nav-link {
+                    color: var(--text-link-450);
+                    text-decoration: none;
+                }
+
+                .nav-link:hover {
+                    color: var(--text-link-900);
+                }
+
+                .nav-link:active {
+                    color: var(--text-link-200);
+                }
+
+            }
+
+        }
+
+    }
+}

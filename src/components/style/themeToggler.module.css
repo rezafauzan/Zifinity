@@ -1,0 +1,26 @@
+.theme_toggler {
+    width: 45px;
+    height: 45px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .theme_toggler_button {
+        background: var(--cta-background);
+        color: #FFFF00;
+        width: 100%;
+        height: 100%;
+        border: 1px solid var(--cta-background);
+        border-radius: 100vmax;
+        font-size: 100%;
+        cursor: pointer;
+    }
+
+    @media(prefers-color-scheme: dark){
+        .theme_toggler_button{
+            background: var(--background-accent-800);
+            color: #FFFF00;
+            border: 1px solid var(--background-accent-800);
+        }
+    }
+}

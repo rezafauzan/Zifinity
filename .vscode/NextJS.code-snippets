@@ -1,0 +1,63 @@
+{
+	// Place your zififront workspace snippets here. Each snippet is defined under a snippet name and has a scope, prefix, body and 
+	// description. Add comma separated ids of the languages where the snippet is applicable in the scope field. If scope 
+	// is left empty or omitted, the snippet gets applied to all languages. The prefix is what is 
+	// used to trigger the snippet and the body will be expanded and inserted. Possible variables are: 
+	// $1, $2 for tab stops, $0 for the final cursor position, and ${1:label}, ${2:another} for placeholders. 
+	// Placeholders with the same ids are connected.
+	// Example:
+	// "Print to console": {
+	// 	"scope": "javascript,typescript",
+	// 	"prefix": "log",
+	// 	"body": [
+	// 		"console.log('$1');",
+	// 		"$2"
+	// 	],
+	// 	"description": "Log output to console"
+	// }
+
+	
+	"New Component": {
+		"prefix": "compo",
+		"body": [
+			"const $1: React.FC = () => {\n\treturn(\n\t\t<>\n\t\t\t<></>\n\t\t</>\n\t)\n}\n\nexport default $1"
+		],
+		"description": "Add new react component"
+	},
+
+	"Arrow Function": {
+		"prefix": "=>",
+		"body": [
+			"($1) => {$2}"
+		],
+		"description": "Add new Arrow Function"
+	},
+
+	"Form input": {
+		"prefix": "fi",
+		"body": [
+			"<label for=\"${2:username}\">${3:Username}</label>",
+			"<input type=\"${1:text}\" name=\"${2:username}\" id=\"${2:username}\" placeholder=\"${2:username}\" />$0"
+		]
+	},
+
+	"Form":{
+		"prefix": "f",
+		"body": "<form method=\"${1|GET,POST,PUT,DELETE|}\" action=\"$2\">$3</form>"
+	},
+
+	"Section":{
+		"prefix": "sectionn",
+		"body": "<section class=\"${1}\" id=\"${1}\">\n\t<div class=\"container\">\n\t\t<div class=\"section-heading\">\n\t\t\t${2}\n\t\t</div>\n\n\t\t<div class=\"section-body\">\n\t\t\t${3}\n\t\t</div>\n\t</div>\n</section>"
+	},
+
+	"List":{
+		"prefix": "list",
+		"body": "<ul class=\"${1}-list\" id=\"${1}-list\">\n\t<li class=\"${1}-list-item\">\n\t\t${2}\n\t</li>\n</ul>"
+	},
+
+	"Card":{
+		"prefix": "card",
+		"body": "<div class=\"card\">\n\n\t<div class=\"card-header\">\n\t\t${1}\n\t</div>\n\n\t<div class=\"card-body\">\n\t\t${1}\n\t</div>\n\n</div>"
+	}
+}

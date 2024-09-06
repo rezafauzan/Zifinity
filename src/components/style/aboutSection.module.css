@@ -1,0 +1,120 @@
+.section {
+    /* background: url("/assets/img/drawable/fotor-ai4.jpg");
+    background-size: cover;
+    background-repeat: no-repeat; */
+    min-height: 400px;
+
+    .container {
+        .section_body {
+            grid-template-areas: "me picture";
+
+            .me {
+                grid-area: me;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: flex-start;
+                gap: 2em;
+
+                .cta {
+
+                    .cta_link {
+                        color: var(--text-link-400);
+                        text-decoration: none;
+                        display: inline;
+                        cursor: pointer;
+                    }
+                }
+
+                .cta:hover {
+                    .cta_link {
+                        color: var(--text-link-800);
+                    }
+                }
+            }
+
+            .picture_of_me {
+                grid-area: picture;
+                display: flex;
+                justify-content: flex-end;
+                align-items: center;
+
+                .picture_frame {
+                    border: 4px dashed var(--color-accent-400);
+                    border-radius: 8px;
+                    position: relative;
+                }
+
+                .profile_picture {
+                    max-width: 220px;
+                    width: 100%;
+                    border-top: 1px solid rgba(255, 255, 255, 0.4);
+                    border-left: 1px solid rgba(255, 255, 255, 0.4);
+                    border-radius: 8px;
+                    box-shadow: 4px 4px 4px 4px rgba(0, 0, 64, 0.8);
+                    position: relative;
+                    top: -8px;
+                    left: -8px;
+                }
+            }
+        }
+    }
+}
+
+/* Extra extra small device*/
+@media only screen and (max-width: 480px) {}
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+    .section {
+        .container{
+            .section-head{
+                padding: 0;
+            }
+
+            .section_body {
+                padding: 0;
+
+                .me{
+                    align-items: center;
+                }
+            }
+        }
+    }
+}
+
+/* Medium devices (landscape tablets, 768px and down) */
+@media only screen and (max-width: 768px) {
+    .section {
+        .container {
+            .section_body {
+                grid-template-areas: 
+                "picture"
+                "me";
+                place-content: center;
+                place-items: center;
+            }
+        }
+    }
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and down) */
+@media only screen and (max-width: 1200px) {}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {}
+
+/* Browser prefer dark color scheme */
+@media(prefers-color-scheme: dark) {}
+
+/* Browser prefer light color scheme */
+@media(prefers-color-scheme: light) {}

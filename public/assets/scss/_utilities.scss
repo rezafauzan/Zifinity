@@ -1,0 +1,81 @@
+/* Utility Classes */
+
+//Font Utilities
+.fw-regular {
+    font-weight: var(--font-weight-regular);
+}
+
+.fw-semibold {
+    font-weight: var(--font-weight-semibold);
+}
+
+.fw-bold {
+    font-weight: var(--font-weight-bold);
+}
+
+.fs-primary-heading {
+    font-size: var(--font-size-primary-heading);
+}
+
+.fs-secondary-heading {
+    font-size: var(--font-size-secondary-heading);
+}
+
+.fs-200 {
+    font-size: var(--font-size-200);
+}
+
+.fs-400 {
+    font-size: var(--font-size-400);
+}
+
+.fs-500 {
+    font-size: var(--font-size-500);
+}
+
+.fs-600 {
+    font-size: var(--font-size-600);
+}
+
+
+//Text Utilities
+.text-primary-400 {
+    color: var(--color-primary-400);
+}
+
+.text-accent-100 {
+    color: var(--color-accent-100);
+}
+
+.text-accent-400 {
+    color: var(--color-accent-400);
+}
+
+.text-neutral-100 {
+    color: var(--color-neutral-100);
+}
+
+.text-neutral-900 {
+    color: var(--color-neutral-900);
+}
+
+//Background Utilities
+.background-primary-400 {
+    background-color: var(--color-primary-400);
+}
+
+.background-accent-100 {
+    background-color: var(--color-accent-100);
+}
+
+.background-accent-400 {
+    background-color: var(--color-accent-400);
+}
+
+.background-neutral-100 {
+    background-color: var(--color-neutral-100);
+}
+
+.background-neutral-900 {
+    background-color: var(--color-neutral-900);
+}

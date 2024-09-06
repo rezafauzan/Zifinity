@@ -1,0 +1,55 @@
+{
+    "message": "Data fetched successfully!",
+    "contents": {
+        "hero_contents": [
+            {
+                "hero_headline": "We Build, We Create, We Solve, We Organize",
+                "hero_body": "And with modern techstacks, We will make sure your app will be high speed, high performance, high efficiency, SEO Friendly, and mostly secure"
+            }
+        ],
+        "about_contents": [
+            {
+                "about_headline": "Hi my name is Reza i am a tech enthusiast",
+                "about_content": "<p>i will help you to Transform your ideas into fancy secure and high performance Websites as posible<\/p><p>turn your design into a custom high-performing websites. With a focus on design and functionality<\/p>",
+                "about_picture": "profile.jpg"
+            }
+        ],
+        "feature_contents": [
+            {
+                "feature_title": "Clean, Semantic, And Maintenable Source Code",
+                "feature_description": "For Future Update",
+                "feature_icon": "Infinycon\/Clean,Semantic,Maintainable.svg"
+            },
+            {
+                "feature_title": "SEO Friendly App",
+                "feature_description": "Make your business easier to find by SEO Optimized App",
+                "feature_icon": "Infinycon\/Search Engine Friendly.svg"
+            },
+            {
+                "feature_title": "Responsive User Interface",
+                "feature_description": "Multiplatform ready with Responsive User Interface",
+                "feature_icon": "Infinycon\/Responsive UI.svg"
+            },
+            {
+                "feature_title": "Optimized User Interface & User Experience",
+                "feature_description": "Engage your customer with Good Optimized User Interface And User Experience",
+                "feature_icon": "Infinycon\/Optimized UI UX.svg"
+            },
+            {
+                "feature_title": "Optimized user accesibility",
+                "feature_description": "Support Disable with optimized accesibility UI for screen reader",
+                "feature_icon": "Infinycon\/Support Disable with Good Accessibility App.svg"
+            },
+            {
+                "feature_title": "High Speed Performance App",
+                "feature_description": "",
+                "feature_icon": "Infinycon\/High Performance App Mini.svg"
+            },
+            {
+                "feature_title": "Security Following OWASP Top 10 Guide",
+                "feature_description": "We made app based 10 OASP Security Standard and Best Practice as posible to make a strong and optimize system ",
+                "feature_icon": "Infinycon\/Security Following OWASP Top 10 Guide.svg"
+            }
+        ]
+    }
+}

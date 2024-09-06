@@ -1,0 +1,28 @@
+@import 'root';
+@import 'reset';
+@import 'mixin';
+@import 'typography';
+@import 'utilities';
+@import 'animation/keyframe';
+@import 'components';
+@import 'theme_style';
+@import 'header';
+@import 'main';
+@import 'pages/product';
+@import 'pages/service';
+@import 'footer';
+@import 'breakpoints';
+
+body {
+    background: var(--body-background);
+    color: var(--text-primary-900);
+    font-family: var(--font-family-body);
+    font-size: var(--font-size-body);
+}
+
+.page-wrapper {
+    max-width: 1140px;
+    width: 100%;
+    margin: auto;
+    box-shadow: 4px 4px 1em 1em rgba(0, 150, 255, 0.4);
+}
