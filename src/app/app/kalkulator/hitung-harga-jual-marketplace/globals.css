@@ -1,0 +1,212 @@
+@charset "UTF-8";
+:root {
+  /* Theme */
+  --color-white: snow;
+  --color-black: #000000;
+  --color-primary-200: var(--color-white);
+  --color-primary-450: rgba(4, 1, 28);
+  --color-primary-900: #000000;
+  --color-accent-200: #28A4DF;
+  --color-accent-400: #0F88D8;
+  --color-accent-800: #0F44D8;
+  --color-neutral-200: var(--color-white);
+  --color-neutral-450: #4D4D4D;
+  --color-neutral-800: var(--color-black);
+  --background-neutral-200: var(--color-neutral-200);
+  --background-neutral-450: var(--color-neutral-450);
+  --background-neutral-900: var(--color-neutral-800);
+  --background-primary-200: var(--color-primary-200);
+  --background-primary-450: var(--color-primary-450);
+  --background-primary-900: var(--color-primary-900);
+  --background-accent-200: var(--color-accent-200);
+  --background-accent-400: var(--color-accent-400);
+  --background-accent-800: var(--color-accent-800);
+  --text-primary-200: var(--color-neutral-200);
+  --text-primary-450: var(--color-neutral-450);
+  --text-primary-900: var(--color-neutral-800);
+  --text-link-white: var(--color-primary-200);
+  --text-link-black: var(--color-primary-900);
+  --text-link-200: var(--color-accent-200);
+  --text-link-400: var(--color-accent-400);
+  --text-link-800: var(--color-accent-800);
+  --cta-text-primary-200: var(--color-neutral-200);
+  --cta-text-primary-400: var(--color-accent-400);
+  --cta-text-primary-800: var(--color-accent-800);
+  --body-background: var(--color-primary-200);
+  --body-dark-background: url("/assets/img/drawable/infinity-background.jpg");
+  --cta-background: var(--background-accent-200);
+  --cta-hover-background: var(--background-accent-400);
+  --cta-active-background: var(--background-accent-800);
+  --nav-background: transparent;
+  --nav-scrolled-background: var(--nav-background);
+  /* Font & Typography */
+  --font-family-sans-serif: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", "Noto Sans", "Liberation Sans", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  --font-family-monospace: Consolas, Menlo, SFMono-Regular, Monaco, "Liberation Mono", "Courier New", monospace;
+  --font-family-primary: var(--font-family-sans-serif);
+  --font-family-body: var(--font-family-monospace);
+  --font-family-heading: var(--font-family-sans-serif);
+  --font-weight-regular: 400;
+  --font-weight-semibold: 500;
+  --font-weight-bold: 700;
+  --font-size-200: 0.8125rem;
+  --font-size-400: 0.875rem;
+  --font-size-450: 1rem;
+  --font-size-600: 1.875rem;
+  --font-size-700: 2.5rem;
+  --font-size-800: 3.5rem;
+  --font-size-body: var(--font-size-500);
+  --font-size-nav: var(--font-size-500);
+  --font-size-primary-heading: var(--font-size-700);
+  --font-size-secondary-heading: var(--font-size-600);
+  --font-size-button: var(--font-size-200);
+}
+
+@media (min-width: 50rem) {
+  :root {
+    --font-size-body: var(--font-size-450);
+    --font-size-nav: var(--font-size-400);
+    --font-size-primary-heading: var(--font-size-800);
+    --font-size-secondary-heading: var(--font-size-700);
+  }
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  transition: 0.3s;
+}
+
+html{
+  scroll-behavior: smooth;
+}
+
+body {
+  background: var(--body-background);
+  color: var(--text-primary-900);
+  font-family: var(--font-family-body);
+  font-size: var(--font-size-body);
+}
+
+@media(prefers-color-scheme: dark){
+  body{
+    background: #080808;
+    /* background: var(--body-dark-background);
+    background-size: cover;
+    background-repeat: no-repeat; */
+    color: var(--text-primary-200);
+  }
+}
+
+/* Utilities */
+.d-flex{
+  display: flex;
+}
+
+.d-flex-col{
+  display: flex;
+  flex-direction: column;
+}
+
+.d-grid{
+  display: grid;
+}
+
+.row{
+  display: flex;
+}
+
+.col-auto {
+  flex: 0 0 auto;
+  width: auto;
+}
+
+.col-1 {
+  flex: 0 0 auto;
+  width: 8.33333333%;
+}
+
+.col-2 {
+  flex: 0 0 auto;
+  width: 16.66666667%;
+}
+
+.col-3 {
+  flex: 0 0 auto;
+  width: 25%;
+}
+
+.col-4 {
+  flex: 0 0 auto;
+  width: 33.33333333%;
+}
+
+.col-5 {
+  flex: 0 0 auto;
+  width: 41.66666667%;
+}
+
+.col-6 {
+  flex: 0 0 auto;
+  width: 50%;
+}
+
+.col-7 {
+  flex: 0 0 auto;
+  width: 58.33333333%;
+}
+
+.col-8 {
+  flex: 0 0 auto;
+  width: 66.66666667%;
+}
+
+.col-9 {
+  flex: 0 0 auto;
+  width: 75%;
+}
+
+.col-10 {
+  flex: 0 0 auto;
+  width: 83.33333333%;
+}
+
+.col-11 {
+  flex: 0 0 auto;
+  width: 91.66666667%;
+}
+
+.col-12 {
+  flex: 0 0 auto;
+  width: 100%;
+}
+
+.gap-1em{
+  gap: 1em;
+}
+
+.gap-2em{
+  gap: 2em;
+}
+
+/* Animation Utilities */
+@keyframes fade-in-out {
+  0%{
+    opacity: 100%;
+  }
+  50%{
+    opacity: 50%;
+  }
+  100%{
+    opacity: 0;
+  }
+}
+
+.fade{
+  animation: fade-in-out 1s infinite ease-in-out;
+}

@@ -28,6 +28,9 @@ const Navbar: React.FC = () => {
 
             <ul role="list" className={( styles.nav_list + " " + (navbarState ? styles.nav_list_show : '') )}>
                 <li className={styles.nav_list_item}>
+                    <a href="/app/kalkulator/hitung-harga-jual-marketplace/" className={styles.nav_link}>App</a>
+                </li>
+                <li className={styles.nav_list_item}>
                     <a href="#" className={styles.nav_link}>Product</a>
                 </li>
                 <li className={styles.nav_list_item}>

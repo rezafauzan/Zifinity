@@ -1,0 +1,84 @@
+.section {
+    padding: 2rem 1rem;
+  }
+  
+  .container {
+    max-width: 700px;
+    margin: 0 auto;
+  }
+  
+  .section-body {
+    background: #f9f9f9;
+    border-radius: 0.5rem;
+    padding: 2rem;
+  }
+  
+  .form_kalkulator_harga_jual {
+    width: 100%;
+  }
+  
+  .form_container {
+    display: grid;
+    gap: 1.5rem; /* jarak antar field */
+  }
+  
+  /* Setiap field (label + input) */
+  .field_group {
+    display: flex;
+    flex-direction: column;
+    gap: 0.25rem;
+  }
+  
+  /* Label */
+  .field_group label {
+    font-weight: 600;
+    font-size: 0.9rem;
+    color: #444;
+  }
+  
+  /* Input, Select, Output */
+  .field_group input,
+  .field_group select,
+  .field_group output {
+    padding: 0.5rem;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 0.375rem;
+  }
+  
+  /* Untuk input radio khusus Gratis Ongkir */
+  .status_gratis_ongkir {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+  }
+  
+  .status_gratis_ongkir input[type="radio"] {
+    margin-right: 0.25rem;
+  }
+  
+  /* Output harga jual */
+  .output_harga_jual {
+    font-weight: bold;
+    font-size: 1.2rem;
+    color: #1d4ed8; /* biru */
+  }
+  
+  /* Tombol submit */
+  .button_submit {
+    margin-top: 1rem;
+    padding: 0.75rem;
+    background-color: #4f46e5; /* biru */
+    color: white;
+    border: none;
+    border-radius: 0.375rem;
+    cursor: pointer;
+    font-weight: 600;
+    font-size: 1rem;
+    transition: background 0.2s;
+  }
+  
+  .button_submit:hover {
+    background-color: #4338ca; /* lebih gelap saat hover */
+  }
+  
